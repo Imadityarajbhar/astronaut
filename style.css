@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html,
 body {
-   
+
     height: 100%;
     width: 100%;
     color: aliceblue;
@@ -19,7 +21,7 @@ body {
 #main {
     position: relative;
     overflow: hidden;
-    background-color:#000;
+    background-color: #000;
 }
 
 
@@ -30,7 +32,7 @@ body {
     padding: 0px 30px;
     align-items: center;
     justify-content: space-between;
-    background-color:#000;
+    background-color: #000;
 
 }
 
@@ -55,7 +57,7 @@ body {
 .page1 {
     height: 100vh;
     width: 100%;
-    background-color:#000;
+    background-color: #000;
 }
 
 .cntnt {
@@ -96,21 +98,23 @@ body {
     height: 100%;
 }
 
-.image img{
+.image img {
     object-fit: cover;
     border-radius: 10%;
-   
-   
-    
+
+
+
 }
 
 
 .zoom-image {
-  transition: transform 0.3s ease; /* Adding smooth transition */
+    transition: transform 0.3s ease;
+    /* Adding smooth transition */
 }
 
 .zoom-image:hover {
-  transform: scale(1.2); /* Scale the image to 120% on hover */
+    transform: scale(1.2);
+    /* Scale the image to 120% on hover */
 }
 
 
@@ -119,10 +123,81 @@ body {
     width: 33%;
     height: 100%;
     text-align: center;
-   text-transform: uppercase;
+    text-transform: uppercase;
 }
 
-.deff h2{
+.deff h2 {
 
     margin: 80px;
+}
+
+/* Existing CSS rules */
+
+@media (max-width: 768px) {
+    /* Apply styles for screens up to 768px width */
+
+    html,
+    body {
+
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        display: none;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+    }
+
+    .cntnt {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .heading {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .zoom-image {
+        transition: transform 0.3s ease;
+        /* Adding smooth transition */
+    }
+
+    .zoom-image:hover {
+        transform: scale(1.2);
+        /* Scale the image to 120% on hover */
+    }
+
+    .heading h2 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .heading p {
+        padding: 30px;
+    }
+
+    .heading button {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .image {
+        display: none;
+        /* Hide the image on smaller screens */
+    }
+
+    .deff {
+        width: 100%;
+        padding-top: 90px;
+        top: 90%;
+        transform: translate(0, 290%);
+    }
 }
