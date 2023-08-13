@@ -13,6 +13,7 @@ body {
     height: 100%;
     width: 100%;
     color: aliceblue;
+    background-color: #000;
 }
 
 /* Rest of your CSS rules */
@@ -109,6 +110,7 @@ body {
 
 .zoom-image {
     transition: transform 0.3s ease;
+    cursor: pointer;
     /* Adding smooth transition */
 }
 
@@ -200,4 +202,200 @@ body {
         top: 90%;
         transform: translate(0, 290%);
     }
+
+    #hd {
+        display: none;
+    }
+
+    .container {
+
+        top: 20%;
+
+    }
+
+    .container height: 2px;
+
+        {
+
+        animation: anim 500s linear infinite;
+    }
+
+
 }
+
+.page2 {
+
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.page2 #hd h2 {
+
+    font-size: 5em;
+    -webkit-text-stroke: 4px;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.left {
+
+    position: relative;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.right {
+
+    position: relative;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.container h2 {
+    position: absolute;
+    font-size: 3em;
+    white-space: nowrap;
+    color: #fff;
+    line-height: 50vh;
+    animation: anim 300s linear infinite;
+}
+
+
+@keyframes anim {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+.left h2 {
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px;
+    left: 100%;
+
+}
+
+.box-cont{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: space-evenly;
+    top: 10%;
+    transform: translate(0% , -50%);
+
+
+}
+
+.box{
+
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    height: 220px;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    padding: 20px;
+    margin-bottom: 20px ;
+}
+.box4{
+    text-transform: uppercase;
+    font-weight: 200;
+    height: 200px;
+}
+.box4 img{
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 40px;
+}
+
+  
+  .spotify-footer {
+    background-color: #000;
+    color: #b3b3b3;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 120px;
+    height: auto;
+  }
+  
+  .footer-links {
+    margin: 20px 0;
+  }
+  
+  .footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .footer-social {
+    margin-top: 20px;
+  }
+  
+  .footer-social a {
+    margin: 0 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+    
+    .footer-logo img {
+      margin-bottom: 20px;
+    }
+  }
+  
