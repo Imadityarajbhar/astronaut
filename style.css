@@ -1,401 +1,429 @@
-/* style.css */
+/* Reset and common styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Fonts */
+body {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global styles */
 html,
 body {
-
-    height: 100%;
-    width: 100%;
-    color: aliceblue;
-    background-color: #000;
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+  background-color: #000;
 }
 
-/* Rest of your CSS rules */
-
-
-#main {
-    position: relative;
-    overflow: hidden;
-    background-color: #000;
-}
-
-
+/* Navbar */
 #navbar {
-    display: flex;
-    width: 100%;
-    height: 70px;
-    padding: 0px 30px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000;
-
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
 }
 
 #navbar ul {
-    display: flex;
-    margin: 20px;
-
+  display: flex;
+  margin: 20px;
 }
 
 #navbar ul li {
-    list-style: none;
-    margin: 20px;
-    cursor: pointer;
+  list-style: none;
+  margin: 20px;
+  cursor: pointer;
 }
 
-#icon i {
-    font-size: 25px;
-    margin: 5px;
-    cursor: pointer;
-}
-
+/* Page 1 */
 .page1 {
-    height: 100vh;
-    width: 100%;
-    background-color: #000;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
 }
 
 .cntnt {
-    display: flex;
-    padding: 50px;
-    width: 100%;
-    height: calc(70px - 100%);
-
+  display: flex;
+  padding: 50px;
+  width: 100%;
+  height: calc(5rem - 100%);
 }
 
 .heading {
-    width: 33%;
-    height: 100%;
-    padding-top: 60px;
-    text-align: center;
-    justify-content: center;
+  width: 33%;
+  height: 100%;
+  padding-top: 60px;
+  text-align: center;
+  justify-content: center;
 }
 
 .heading h2 {
-    font-size: 50px;
-    padding: 50px;
-    text-transform: uppercase;
-
+  font-size: 3rem;
+  padding: 50px;
+  text-transform: uppercase;
 }
 
 .heading button {
-    font-size: 1rem;
-    padding: 20px;
-    margin: 50px;
-    border-radius: 10%;
-    text-transform: uppercase;
-    font-weight: 700;
-
+  font-size: 1rem;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 10%;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .image {
-    width: 33%;
-    height: 100%;
+  width: 33%;
+  height: 100%;
 }
 
 .image img {
-    object-fit: cover;
-    border-radius: 10%;
-
-
-
+  object-fit: cover;
+  border-radius: 10%;
 }
 
-
 .zoom-image {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    /* Adding smooth transition */
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .zoom-image:hover {
-    transform: scale(1.2);
-    /* Scale the image to 120% on hover */
+  transform: scale(1.2);
 }
 
-
-
 .deff {
-    width: 33%;
-    height: 100%;
-    text-align: center;
-    text-transform: uppercase;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .deff h2 {
-
-    margin: 80px;
+  margin: 80px;
 }
 
-/* Existing CSS rules */
+/* Rest of your styles... */
 
-@media (max-width: 768px) {
-    /* Apply styles for screens up to 768px width */
-
-    html,
-    body {
-
-        height: 100%;
-        width: 100%;
-        background-color: #000;
-    }
-
-    #navbar ul {
-        flex-direction: column;
-        display: none;
-        align-items: center;
-        margin: 10px 0;
-    }
-
-    #navbar ul li {
-        margin: 10px 0;
-    }
-
-    .cntnt {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .heading {
-        width: 100%;
-        padding-top: 20px;
-    }
-
-    .zoom-image {
-        transition: transform 0.3s ease;
-        /* Adding smooth transition */
-    }
-
-    .zoom-image:hover {
-        transform: scale(1.2);
-        /* Scale the image to 120% on hover */
-    }
-
-    .heading h2 {
-        font-size: 30px;
-        padding: 20px;
-    }
-
-    .heading p {
-        padding: 30px;
-    }
-
-    .heading button {
-        margin: 20px;
-        padding: 10px;
-    }
-
-    .image {
-        display: none;
-        /* Hide the image on smaller screens */
-    }
-
-    .deff {
-        width: 100%;
-        padding-top: 90px;
-        top: 90%;
-        transform: translate(0, 290%);
-    }
-
-    #hd {
-        display: none;
-    }
-
-    .container {
-
-        top: 20%;
-
-    }
-
-    .container height: 2px;
-
-        {
-
-        animation: anim 500s linear infinite;
-    }
-
-
-}
-
+/* Page 2 */
 .page2 {
-
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    text-align: center;
-    padding: 50px;
-
+  width: 100%;
+  height: 20rem;
+  background-color: #000;
+  text-align: center;
+  padding: 50px;
+  justify-content: center;
 }
 
-.page2 #hd h2 {
-
-    font-size: 5em;
-    -webkit-text-stroke: 4px;
-    -webkit-text-fill-color: transparent;
+#hd h2 {
+  font-size: 5em;
+  -webkit-text-stroke: 4px;
+  -webkit-text-fill-color: transparent;
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  display: flex;
 }
 
-.left {
-
-    position: relative;
-    height: 100%;
-    width: 50%;
-    overflow: hidden;
-}
-
+.left,
 .right {
-
-    position: relative;
-    height: 100%;
-    width: 50%;
-    overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
 }
 
 .container h2 {
-    position: absolute;
-    font-size: 3em;
-    white-space: nowrap;
-    color: #fff;
-    line-height: 50vh;
-    animation: anim 300s linear infinite;
+  position: absolute;
+  font-size: 3em;
+  white-space: nowrap;
+  color: #fff;
+  line-height: 20vh;
+  animation: anim 300s linear infinite;
 }
 
-
 @keyframes anim {
-    0% {
-        transform: translate(0);
-    }
+  0% {
+    transform: translate(0);
+  }
 
-    100% {
-        transform: translate(-100%);
-    }
+  100% {
+    transform: translate(-100%);
+  }
 }
 
 .left h2 {
-
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 3px;
-    left: 100%;
-
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px;
+  left: 100%;
 }
 
-.box-cont{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    justify-content: space-evenly;
-    top: 10%;
-    transform: translate(0% , -50%);
-
-
+.box-cont {
+  /* Your box container styles for page 2 */
+  width: 100%;
+  height: 20rem;
+  justify-content: space-evenly;
+  display: flex;
 }
 
-.box{
-
-    width: 20%;
-    padding: 10px;
-    margin: 10px;
-    height: 220px;
-    /* background-color: aquamarine; */
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 100;
+.box {
+  /* Your box styles for page 2 */
+  text-align: center;
 }
 
-.box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-    padding: 20px;
-    margin-bottom: 20px ;
-}
-.box4{
-    text-transform: uppercase;
-    font-weight: 200;
-    height: 200px;
-}
-.box4 img{
-    height: 100%;
-    padding: 20px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    margin-bottom: 40px;
+.box img {
+  /* Your box image styles for page 2 */
+  object-fit: cover;
+  height: 9rem;
+  width: 9rem;
 }
 
-  
-  .spotify-footer {
-    background-color: #000;
-    color: #b3b3b3;
-    padding: 40px 0;
-  }
-  
+/* Rest of your styles... */
+
+.Artsist-cont {
+  height: 30rem;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+#hd {
+  text-align: center;
+}
+
+#artist-flex {
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 20px;
+  z-index: 999;
+  justify-content: space-evenly;
+}
+
+.Artist {
+  height: 20rem;
+  width: 20rem;
+  /* position: absolute; */
+}
+.Artist img {
+  height: 9rem;
+  width: 9rem;
+  object-fit: cover;
+  border-radius: 50%;
+  /* position: absolute; */
+}
+
+/* Spotify Footer Styles */
+.spotify-footer {
+  background-color: #000;
+  color: #b3b3b3;
+  padding: 40px 0;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.footer-links {
+  margin: 20px 0;
+}
+
+.footer-links a {
+  color: #b3b3b3;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
   .footer-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
     flex-direction: column;
-    align-items: center;
   }
-  
+
   .footer-logo img {
-    width: 120px;
-    height: auto;
+    margin-bottom: 20px;
   }
-  
-  .footer-links {
-    margin: 20px 0;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+
+  /* Styles for screens up to 768px width */
+  #navbar ul {
+    flex-direction: column;
+    margin: 10px 0;
   }
-  
+
+  #navbar ul li {
+    /* margin: 10px 0; */
+    display: none;
+  }
+
+  .cntnt {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .heading {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .heading h2 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .heading button {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .image {
+
+    display: none;
+   
+  }
+
+  .deff {
+    /* display: none; */
+    width: 100%;
+    padding-top: 75%;
+  }
+
+  #hd {
+    /* display: none; */
+  }
+
+  .page2 {
+    height: 15rem;
+    padding: 20px;
+  }
+
+  .container {
+    height: 7rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .container h2 {
+    font-size: 2em;
+  }
+
+  .left h2 {
+    font-size: 2.5em;
+  }
+
+  .box-cont {
+    height: 15rem;
+    margin-top: 90%;
+  }
+
+  .box {
+    margin: 10px;
+  }
+
+  .box img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .Artist-cont {
+    height: 20rem;
+    margin-bottom: 80px;
+  }
+  .Artist-cont>#hd h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+   margin-top: 90%;
+   margin-bottom: 50px;
+  }
+
+  .Artist {
+    height: 10rem;
+    width: 10rem;
+    
+  }
+
+  .Artist img {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .spotify-footer {
+    padding: 30px 0;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+
   .footer-links a {
-    color: #b3b3b3;
-    text-decoration: none;
-    margin: 0 15px;
-  }
-  
-  .footer-social {
-    margin-top: 20px;
-  }
-  
-  .footer-social a {
     margin: 0 10px;
   }
-  
-  .footer-bottom {
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for screens up to 480px width */
+  .box-cont {
+    flex-direction: column;
+  }
+
+  .box {
+    flex-basis: 100%;
+    white-space: nowrap;
     text-align: center;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
   }
-  
-  .footer-bottom p {
-    font-size: 14px;
+
+  .box img {
+    width: 150px;
+    height: 150px;
   }
-  
-  @media screen and (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-    }
-    
-    .footer-logo img {
-      margin-bottom: 20px;
-    }
+
+  .Artist img {
+    width: 80px;
+    height: 80px;
   }
-  
+}
